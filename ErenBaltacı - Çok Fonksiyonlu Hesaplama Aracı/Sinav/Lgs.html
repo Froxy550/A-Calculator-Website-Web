@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>DAHİHESAP | LGS Hesaplama</title>
+    <link rel="shortcut icon" href="/Foto/Logo.png" type="image/x-icon">
+</head>
+<body>
+    <style>
+        
+    </style>
+   <nav class="navbar">
+    <div class="logo">
+        <a class="Logo-text" href="/index.html"><span style="color: rgb(0, 0, 192);">Dahi</span> Hesap</a>
+        <p class="alt-text">Daima iyi çözüm dahi hesap</p>
+    </div>
+    <ul class="nav-links">
+        <li>
+            <a href="">Sınav</a>
+            <ul class="dropdown">
+                <li><a href="/Sinav/Ayt.html">AYT Hesaplama</a></li>
+                <li><a href="/Sinav/Ehliyet.html">Ehliyet Sınavı Hesaplama</a></li>
+                <li><a href="/Sinav/Kpss.html">KPSS Hesaplama</a></li>
+                <li><a href="/Sinav/Lgs.html">LGS Hesaplama</a></li>
+                <li><a href="/Sinav/Tyt.html">TYT Hesaplama</a></li>
+                <li><a href="/Sinav/Yds.html">YDS Hesaplama</a></li>
+            </ul>
+        </li>
+        <li>
+            <a href="">Sağlık</a>
+            <ul class="dropdown">
+                <li><a href="/Saglik/BazalMetobolizma.html">Bazal Metabolizma Hızı Hesaplama</a></li>
+                <li><a href="/Saglik/Bel_Kalca.html">Bel/Kalça Oranı Hesaplama</a></li>
+                <li><a href="/Saglik/DogumTarihi.html">Doğum Tarihi Hesaplama</a></li>
+                <li><a href="/Saglik/Gebelik.html">Gebelik Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukKalori.html">GunlukKalori Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukKarbonhidrat.html">GunlukKarbonhidrat Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukKreatin.html">GunlukKreatin Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukMakroBesin.html">GunlukMakroBesin Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukProtein.html">GunlukProtein Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukSu.html">GunlukSu Hesaplama</a></li>
+                <li><a href="/Saglik/GunlukYag.html">GunlukYag Hesaplama</a></li>
+                <li><a href="/Saglik/IdealKilo.html">IdealKilo Hesaplama</a></li>
+                <li><a href="/Saglik/SigaraMaliyet.html">SigaraMaliyet Hesaplama</a></li>
+                <li><a href="/Saglik/VucutKitleEndeksi.html">VucutKitleEndeksi Hesaplama</a></li>
+                <li><a href="/Saglik/VucutYagOrani.html">VucutYagOrani Hesaplama</a></li>
+            </ul>
+        <li><a href="Hipotenus.html">Matematik</a>
+            <ul class="dropdown">
+                <li><a href="/Matematik/AsalCarpan.html">Asal Çarpan Hesaplama </a></li>
+                <li><a href="/Matematik/BasitFaiz.html">Basit Faiz Hesaplama</a></li>
+                <li><a href="/Matematik/DaireAlan.html">Daire Alan Hesaplama</a></li>
+                <li><a href="/Matematik/DaireCevre.html">Daire Çevre Hesaplama</a></li>
+                <li><a href="/Matematik/Faktoriyel.html">Faktoriyel Hesaplama</a></li>
+                <li><a href="/Matematik/Hipotenus.html">Hipotenüs Hesaplama</a></li>
+                <li><a href="/Matematik/KareAlan.html">Kare Alan Hesaplama</a></li>
+                <li><a href="/Matematik/KareCevre.html">Kare Çevre Hesaplama</a></li>
+                <li><a href="/Matematik/Ortalama.html">Ortalama Hesaplama</a></li>
+                <li><a href="/Matematik/UcgenAlan.html">Üçgen Alan Hesaplama</a></li>
+                <li><a href="/Matematik/UcgenCevre.html">Üçgen Çevre Hesaplama</a></li>
+            </ul>
+        </li>
+        
+       
+    </ul>
+    <div style="margin-left: 50px;">
+        
+          <img src="/Foto/Logo.png" class="Search-bar" style="margin-left: 30px;" width="75px" height="75px" alt="">
+        
+    </div>
+</nav>
+    <div class="container-wrapper">
+      
+        <div class="container">
+            <h2 class="Hesap-Bas" style="margin-bottom: 5px;"> LGS Puan Hesaplama </h2>
+            <hr>
+            <label>Türkçe Doğru: <input type="number" id="turkceD" value="0" min="0" max="20"> Yanlış: <input type="number" id="turkceY" value="0" min="0" max="20"></label><br>
+            <label>Matematik Doğru: <input type="number" id="matematikD" value="0" min="0" max="20"> Yanlış: <input type="number" id="matematikY" value="0" min="0" max="20"></label><br>
+            <label>Fen Bilgisi Doğru: <input type="number" id="fenD" value="0" min="0" max="20"> Yanlış: <input type="number" id="fenY" value="0" min="0" max="20"></label><br>
+            <label>T.C. İnk. Tarihi Doğru: <input type="number" id="sosD" value="0" min="0" max="10"> Yanlış: <input type="number" id="sosY" value="0" min="0" max="10"></label><br>
+            <label>Din Kültürü Doğru: <input type="number" id="dinD" value="0" min="0" max="10"> Yanlış: <input type="number" id="dinY" value="0" min="0" max="10"></label><br>
+            <label>Yabancı Dil Doğru: <input type="number" id="İngilizceD" value="0" min="0" max="10"> Yanlış: <input type="number" id="İngilizceY" value="0" min="0" max="10"></label><br>
+            <hr>
+            <br>
+            <button onclick="LGS_hesapla()">Hesapla</button>
+            <button class="button_Reset" onclick="LGS_sifirla()">Sıfırla</button>
+            <h3 class="Hesap-Bas">Puan: <span id="sonuc">0</span></h3>
+        </div>
+        
+        
+    </div>
+    <div class="Description">
+        <h2 class="title">LGS nedir?</h2>
+        <p class="text">Resmî ve özel ortaokullar, imam hatip ortaokulları ve geçici eğitim merkezlerinin (GEM) 8'inci sınıflarında öğrenim gören öğrencilerin fen liseleri, sosyal bilimler liseleri, proje uygulayan eğitim kurumları ile mesleki ve teknik Anadolu liselerinin Anadolu teknik programlarına öğrenci yerleştirilmesi amacıyla Bakanlıkça yapılan merkezî sınava kısaca LGS (Liseye Geçiş Sınavı) denilmektedir.</p>
+        <br>
+        <hr>
+        <h2 class="title">MSP nedir?</h2>
+        <p class="text">Fen liseleri, sosyal bilimler liseleri, proje uygulayan eğitim kurumları ile mesleki ve teknik Anadolu liselerinin Anadolu teknik programlarına öğrenci yerleştirmede kullanılan Bakanlıkça yapılan merkezî sınav puanına kısaca MSP denilmektedir.</p>
+        <br>
+        <hr>
+        <h2 class="title">LGS puanı nasıl hesaplanır?</h2>
+        <p class="text">Sınava giren adayların, her bir test için belirlenen ham puanlarının özel formüller kullanılarak ağırlıklandırılmasıyla hesaplanmaktadır.</p>
+        <br>
+        <hr>
+        <h2 class="title">LGS puanı nerede kullanılır?</h2>
+        <p class="text">8. sınıfın bitmesiyle liseye geçecek öğrencilerin nitelikli okullar olarak nitelendirilen fen liseleri, sosyal bilimler liseleri, proje uygulayan eğitim kurumları ile mesleki ve teknik Anadolu liselerinin Anadolu teknik programlarına yerleştirilmesinde kullanılmaktadır.</p>
+        <br>
+        <hr>
+        <h2 class="title">2021 yılında LGS ne zaman yapılacak?</h2>
+        <p class="text">Milli Eğitim Bakanlığı'nın belirlediği sınav takvimine göre merkezî sınav, 6 haziran 2021 tarihinde yapılacaktır. Merkezî sınav, iki oturumda tamamlanacaktır. Birinci oturum saat 09:30'da, ikinci oturum ise saat 11:30'da başlayacaktır.</p>
+        <br>
+        <hr>
+        <h2 class="title">Sınav kaç dakika sürecek?</h2>
+        <p class="text">İlk oturum olan sözel bölüm 50 soru ve 75 dakika, ikinci oturum olan sayısal bölüm ise 40 soru ve 80 dakika olmak üzere uygulanacaktır. Böylece adaylara soru başına ortalama olarak sözelde 1,5 dakika, sayısalda ise 2 dk süre verilmiş olacaktır.</p>
+        <br>
+        <hr>
+        <h2 class="title">LGS'de hangi derslerden kaç soru var?</h2>
+        <p class="text">İlk oturum olan sözel bölümde Türkçe dersinden 20, T.C. İnkılap Tarihi ve Atatürkçülük dersinden 10, Din Kültürü ve Ahlak Bilgisi dersinden 10 ve Yabancı Dil dersinden de 10 soru olmak üzere toplamda 50 soru sorulacaktır. İkinci oturum olan sayısal bölümde ise Matematik ve Fen Bilimleri derslerinin her birinden 20'şer olmak üzere adaylara toplamda 40 soru sorulacaktır. Böylece her iki oturumda adaylara sorulacak toplam soru sayısı 90 olacaktır.</p>
+        <br>
+        <hr>
+        <h2 class="title">Net sayısı nasıl hesaplanır?</h2>
+        <p class="text">LGS'de 3 yanlış 1 doğruyu götürmektedir. Her derse ait testlerde adayın yanlış cevaplamış olduğu soru sayısının üçte biri, ilgili teste ait doğru sayısından çıkarılarak adayın ilgili dersten alacağı ham puan (net sayısı) elde edilmektedir.</p>
+    </div>
+    
+    
+    <footer class="Footer" style="position: relative;  padding: 10px;  overflow: hidden; margin-top: 100px;">
+        <div style="position: relative; width: 100%; height: auto;">
+            <div style="position: absolute; left: 400px; top: 100px;">
+                <h3 style="margin-bottom: 20px; font-size: 30px; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; color: #afafaf; font-weight: 500;">
+                    "Artık <span style="color: #00ccff; font-weight: 500;">Hesaplar </span> çok net"
+                </h3>
+                <div class="cta">
+                    <p style="color: white;">DAHİHESAP.net © 2009 - 2025 </p>
+                </div>
+            </div>
+                <div style="position: absolute; left: 500px; bottom: 100px;">
+                    <div style="position: absolute; left: 600px; top: 150px;">
+                        <h3 style="font-weight: 500; margin-bottom: 25px; font-size: 20px; color: rgb(0, 102, 255);">Sayfalar</h3>
+                        <p style="margin-bottom: 15px; color: white;"><a class="Sayfa-link" href="index.html">Anasayfa</a></p>
+                        <p style="margin-bottom: 15px; color: white;"><a class="Sayfa-link" href="Blog.html">Blog</a></p>
+                        <p style="margin-bottom: 15px; color: white;"><a class="Sayfa-link" href="Hizmetlerimiz.html">Hizmetlerimiz</a></p>
+                        <p style="margin-bottom: 15px; color: white;"><a class="Sayfa-link" href="Projelerimiz.html">Projelerimiz</a></p>
+                        <p style="margin-bottom: 15px; color: white;"><a class="Sayfa-link" href="Iletisim.html">İletişim</a></p>
+                        <p style="margin-bottom: 15px; width: 200px; color: white; text-decoration: none;"><a class="Sayfa-link" href="Woxx.Space -Gizlilik Politikası.pdf" >Gizlilik Politikası</a></p>
+                    </div>
+            
+                    <div style="position: absolute; left: 900px; top: 150px;">
+                        <h3 style="font-weight: 500; margin-bottom: 25px; font-size: 20px; color: rgb(0, 102, 255);">Ajans</h3>
+                        <p style="margin-bottom: 15px;"><a class="Sayfa-link" href="Hakkimizda.html" >Neden?</a></p>
+                        <p style="margin-bottom: 15px;"><a class="Sayfa-link" href="Projelerimiz.html">Uzmanlıklarımız</a></p>
+                        <p style="margin-bottom: 15px;"><a class="Sayfa-link" href="Hizmetlerimiz.html">Fayda</a></p>
+                        <p style="margin-bottom: 15px;"><a class="Sayfa-link" href="Blog.html">Özellikler</a></p>
+                        
+                    </div>
+                </div>
+                </div>
+           
+    </footer>
+
+    <script>
+        function LGS_hesapla() {
+               
+                function netHesapla(dogru, yanlis) {
+                    return Math.max(0, dogru - (yanlis / 4));
+                }
+                
+               
+                let turkce = netHesapla(parseInt(document.getElementById("turkceD").value) || 0, parseInt(document.getElementById("turkceY").value) || 0);
+                let matematik = netHesapla(parseInt(document.getElementById("matematikD").value) || 0, parseInt(document.getElementById("matematikY").value) || 0);
+                let FenBilimleri = netHesapla(parseInt(document.getElementById("fenD").value) || 0, parseInt(document.getElementById("fenY").value) || 0);
+                let SosyalBilgiler = netHesapla(parseInt(document.getElementById("sosD").value) || 0, parseInt(document.getElementById("sosY").value) || 0);
+                let DinKulturu = netHesapla(parseInt(document.getElementById("dinD").value) || 0, parseInt(document.getElementById("dinY").value) || 0);
+                let Ingilizce = netHesapla(parseInt(document.getElementById("İngilizceD").value) || 0, parseInt(document.getElementById("İngilizceY").value) || 0);
+              
+                let turkce_puan = turkce * 4;
+                let matematik_puan = matematik * 4;
+                let fen_puan = FenBilimleri * 4;
+                let sos_puan = SosyalBilgiler * 3;
+                let din_puan = DinKulturu * 1;
+                let ing_puan = Ingilizce * 2;
+
+
+let puan = turkce_puan + matematik_puan + fen_puan + sos_puan + din_puan + ing_puan + 200;
+
+
+document.getElementById("sonuc").innerText = puan.toFixed(2);
+}
+
+
+function LGS_sifirla() {
+let inputs = document.querySelectorAll("input");
+inputs.forEach(input => input.value = 0);
+document.getElementById("sonuc").innerText = 0;
+}
+
+
+      
+    </script>
+</body>
+</html>

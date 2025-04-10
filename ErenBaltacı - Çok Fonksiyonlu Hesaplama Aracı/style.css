@@ -1,0 +1,369 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    height: 100vh;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg ,#183857,#152580,#080a18,#06235a);
+    background-size: 300% 300%;
+   background-position: 100%;
+  }
+ 
+    
+  
+
+  .logo{
+    margin-right: 50px;
+  }
+  .Logo-text{
+    text-decoration: none;
+    color: #00e1ff;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: 1000;
+    font-family:Arial, Helvetica, sans-serif ;
+  }
+  .Logo-text:hover{
+    
+    border-radius: 10px;
+  }
+  .alt-text{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 20px;
+    font-family:'Courier New', Courier, monospace;
+  }
+  .Search-bar{
+    background-color: rgb(0, 0, 0); 
+    border: none; 
+    color: white; 
+    padding: 15px 14px; 
+    font-size: 16px; 
+    cursor:auto; 
+    box-shadow: 5px 5px 5px rgb(77, 118, 233);
+    border: 1px solid rgb(0, 132, 255);
+    background-color: #002c8b;
+    border-radius: 50px;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+  }
+
+  .Search-bar:hover {
+    background-color: rgb(0, 36, 153);
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+    margin-left: 5px;
+   font-weight: 500;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+  }
+ 
+  
+  .nav-links li a:hover {
+     border-bottom: 2px solid rgb(0, 119, 255);
+     color: rgb(0, 119, 255);
+  }
+  
+  #main-a {
+    background-color: #333;
+    padding: 11px 20px;
+    border-radius: 20px;
+    background-color: #002d81;
+    outline: auto;
+    outline-style: solid;
+    outline-color: #1a418a;
+    outline-width: 1px;
+    color: rgb(0, 132, 255);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+  }
+
+.navbar{
+    background-color: rgb(0, 0, 0);
+
+    outline: auto;
+    outline-style: solid;
+    outline-color:rgb(25, 0, 255);
+    width: 800px;
+    height: 80px;
+   
+  background-color: rgba(0, 30, 85, 0);
+  backdrop-filter: blur(100px);
+  border-radius: 0px;
+  border-width: 1px;
+  opacity: 1;
+  margin: 0;
+  display: flex;
+  margin: auto;
+  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  z-index: 1030; /* to prevent the navbar getting covered up by other content */
+  left: 560px;
+  box-shadow: 10px 10px 10px rgb(9, 44, 139);
+  
+  }
+
+  .Header{
+    display: flex;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-content: flex-start;
+  width: 1100px;
+    height: 100px;
+    text-align: center;
+  }
+  
+  .Bas1{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 220px;
+    margin-top: 200px;
+    color: #00ccff;
+    gap: 20px;
+    font-family:"Rethink Sans", "Rethink Sans Placeholder", sans-serif;
+    font-size: 50px;
+  
+  }
+  
+  .Bas2{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 0.3s;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 250px;
+    margin-top: 90px;
+    gap: 20px;
+    color: #ffffff;
+    
+  
+  }
+  .Bas3{
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 490px;
+    margin-bottom: 200px;
+    gap: 20px;
+    color: #ffffff;
+  
+  }
+
+  .ortak{
+    width: 190px;
+    height: 70px;
+    margin-left: 100px;
+  }
+  .Ortaklar{
+    margin-left: 250px;
+    animation: ortaklar 4s;
+    
+  }
+
+  .Link-sos{
+    text-decoration: none;
+    color:#00d9ff;
+    background-color: #002fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+    margin-left: 10px;
+  }
+  .Link-sos:hover{
+    text-decoration: none;
+    color:#00d9ff;
+    background-color: #00198a;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px;
+  }
+
+  Footer{
+    background-color: #000000;
+    width: 100%;
+    margin-left: 0px;
+    opacity: 1;
+    height: 400px;
+    border: 2px solid #1f1f1f;
+    
+  }
+
+  .Sayfa-link{
+    color: #929292;
+    text-decoration: none;
+    font-family: system-ui;
+    font-weight: 500;
+    font-size: 18px;
+    transition: color 0.3s ease;
+   
+  }
+  .Sayfa-link:hover{
+    color: #ffffff;
+  }
+
+  .nav-links li:hover .dropdown {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 67%;
+    left: 100;
+    background-color: #444;
+    min-width: 150px;
+    min-height: 200px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown li {
+    display: block;
+}
+
+.dropdown a {
+    padding: 10px;
+    display: block;
+    color: white;
+}
+
+.dropdown a:hover {
+    background-color: #555;
+}
+  label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 1000;
+    color: #0059ff;
+
+  }
+  .container {
+            max-width: 650px;
+            margin: auto;
+            margin-top: 150px;
+            background: rgba(0, 0, 0, 0.295);
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 1px 1px 10px rgb(255, 255, 255);
+        }
+        input {
+            width: 50px;
+            padding: 5px;
+            margin: 10px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .button_Reset {
+          padding: 10px 20px;
+          margin-top: 10px;
+          background-color: #ff0000;
+          color: white;
+          border: none;
+          cursor: pointer;
+          border-radius: 5px;
+          margin-bottom: 10px;
+      }
+      .button_Reset:hover {
+          background-color: #970000;
+      }
+
+        .Hesap-Bas{
+          font-family: Arial, Helvetica, sans-serif;
+          color: #007bff;
+          font-weight: 1000;
+          font-size: 32px;
+        }
+
+        .container-wrapper {
+          opacity: 0;
+          transform: translateY(20px);
+          animation: fadeInUp 1s ease forwards;
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping if the screen is too small */
+    gap: 20px; /* Adds spacing between the boxes */
+    justify-content: center; /* Centers them horizontally */
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+    width: 30%; /* Adjust width as needed */
+    min-width: 300px; /* Ensures it doesn't get too small */
+   
+}
+
+.title {
+  
+  color: #1E90FF;
+  font-weight: 1000;
+  font-size: 30px;
+}
+.text {
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 15px;
+  letter-spacing: 2px;
+  
+}
+.Description{
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUpD 1s ease forwards;
+  animation-delay: 0.3s;
+  margin-top: 50px;
+  margin-left: 50px;
+  word-wrap: break-word;
+  word-spacing: 2px;
+  max-width: 1500px;
+
+}
+@keyframes fadeInUpD {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+       
